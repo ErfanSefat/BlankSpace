@@ -12,10 +12,48 @@ async function loadItems(){
         card.className = "item-card";
         container.appendChild(card);
 
+        const img = document.createElement("img");
+        img.className = "item-img";
+        img.src = `./Pictures/vinyls/${element.item_img}`;
+        card.appendChild(img);
+
         const name = document.createElement("div");
         name.className = "item-name";
         name.textContent = element.item_name;
         card.appendChild(name);
+
+        const info = document.createElement("div");
+        info.className = "item-info";
+        card.appendChild(info);
+        const release = document.createElement("div");
+        release.className = "item-release";
+        release.textContent = element.release_year;
+        const type = document.createElement("div");
+        type.className = "item-type";
+        type.textContent = element.type;
+
+        const distance = document.createElement("img");
+        distance.src = "./Pictures/dis.svg"
+
+        info.appendChild(release);
+        info.appendChild(distance);
+        info.appendChild(type);
+
+        const pricebox = document.createElement("div");
+        pricebox.className = "item-price";
+        card.appendChild(pricebox);
+
+        const carting = document.createElement("div");
+        carting.className = "add-to-cart";
+        carting.textContent = "Add to Cart";
+
+        const price = document.createElement("div");
+        price.className = "price";
+        price.textContent = `$${element.item_price}`;
+
+        pricebox.appendChild(carting);
+        pricebox.appendChild(price);
+
     });
 }
 loadItems();

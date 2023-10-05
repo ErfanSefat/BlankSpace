@@ -55,6 +55,13 @@
             "item_price": 27,
             "release_year": 2022,
             "type": "Vinyl"
+        },
+        {
+            "item_img": "lover.jpg",
+            "item_name": "Lover",
+            "item_price": 41.3,
+            "release_year": 2019,
+            "type": "Vinyl"
         }
     ]
 }
