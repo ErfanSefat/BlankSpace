@@ -1,59 +1,59 @@
 {
     "vinyls":[
         {
-            "item-img": "fearless.jpg",
-            "item-name": "Fearless (Taylor's Version)",
-            "item-price": 31,
-            "release-year": 2003,
+            "item_img": "fearless.jpg",
+            "item_name": "Fearless (Taylor's Version)",
+            "item_price": 31,
+            "release_year": 2003,
             "type": "Vinyl"
         },
         {
-            "item-img": "red.jpg",
-            "item-name": "Red (Taylor's Version)",
-            "item-price": 28,
-            "release-year": 2012,
+            "item_img": "red.jpg",
+            "item_name": "Red (Taylor's Version)",
+            "item_price": 28,
+            "release_year": 2012,
             "type": "Vinyl"
         },
         {
-            "item-img": "speaknow.jpg",
-            "item-name": "Speak Now (Taylor's Version)",
-            "item-price": 40,
-            "release-year": 2010,
+            "item_img": "speaknow.jpg",
+            "item_name": "Speak Now (Taylor's Version)",
+            "item_price": 40,
+            "release_year": 2010,
             "type": "Vinyl"
         },
         {
-            "item-img": "1989.jpg",
-            "item-name": "1989 (Taylor's Version)",
-            "item-price": 19.89,
-            "release-year": 2014,
+            "item_img": "1989.jpg",
+            "item_name": "1989 (Taylor's Version)",
+            "item_price": 19.89,
+            "release_year": 2014,
             "type": "Vinyl"
         },
         {
-            "item-img": "folklore.jpg",
-            "item-name": "folklore",
-            "item-price": 18,
-            "release-year": 2020,
+            "item_img": "folklore.jpg",
+            "item_name": "folklore",
+            "item_price": 18,
+            "release_year": 2020,
             "type": "Vinyl"
         },
         {
-            "item-img": "evermore.jpg",
-            "item-name": "evermore",
-            "item-price": 16,
-            "release-year": 2020,
+            "item_img": "evermore.jpg",
+            "item_name": "evermore",
+            "item_price": 16,
+            "release_year": 2020,
             "type": "Vinyl"
         },
         {
-            "item-img": "Reputation.jpg",
-            "item-name": "Reputation",
-            "item-price": 130,
-            "release-year": 2017,
+            "item_img": "Reputation.jpg",
+            "item_name": "Reputation",
+            "item_price": 130,
+            "release_year": 2017,
             "type": "Vinyl"
         },
         {
-            "item-img": "Midnights.jpg",
-            "item-name": "Midnights",
-            "item-price": 27,
-            "release-year": 2022,
+            "item_img": "Midnights.jpg",
+            "item_name": "Midnights",
+            "item_price": 27,
+            "release_year": 2022,
             "type": "Vinyl"
         }
     ]
