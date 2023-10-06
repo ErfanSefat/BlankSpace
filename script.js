@@ -32,11 +32,19 @@ async function loadItems(){
         type.className = "item-type";
         type.textContent = element.type;
 
-        const distance = document.createElement("img");
-        distance.src = "./Pictures/dis.svg"
+        const distance1 = document.createElement("img");
+        distance1.src = "./Pictures/dis.svg";
+        const distance2 = document.createElement("img");
+        distance2.src = "./Pictures/dis.svg";
+
+        const genre = document.createElement("div");
+        genre.className = "item-genre";
+        genre.textContent = element.genre;
 
         info.appendChild(release);
-        info.appendChild(distance);
+        info.appendChild(distance1);
+        info.appendChild(genre);
+        info.appendChild(distance2);
         info.appendChild(type);
 
         const pricebox = document.createElement("div");
