@@ -9,14 +9,6 @@
             "genre" : "Country"
         },
         {
-            "item_img": "red.jpg",
-            "item_name": "Red (Taylor's Version)",
-            "item_price": 28,
-            "release_year": 2012,
-            "type": "Vinyl",
-            "genre" : "Pop"
-        },
-        {
             "item_img": "speaknow.jpg",
             "item_name": "Speak Now (Taylor's Version)",
             "item_price": 40,
@@ -25,10 +17,42 @@
             "genre" : "Country"
         },
         {
+            "item_img": "red.jpg",
+            "item_name": "Red (Taylor's Version)",
+            "item_price": 28,
+            "release_year": 2012,
+            "type": "Vinyl",
+            "genre" : "Pop"
+        },
+        {
             "item_img": "1989.jpg",
             "item_name": "1989 (Taylor's Version)",
             "item_price": 19.89,
             "release_year": 2014,
+            "type": "Vinyl",
+            "genre" : "Pop"
+        },
+        {
+            "item_img": "1989-Cassette.jpg",
+            "item_name": "1989 (Taylor's Version)",
+            "item_price": 9.89,
+            "release_year": 2014,
+            "type": "Cassette",
+            "genre" : "Pop"
+        },
+        {
+            "item_img": "Reputation.jpg",
+            "item_name": "Reputation",
+            "item_price": 130,
+            "release_year": 2017,
+            "type": "Vinyl",
+            "genre" : "Pop"
+        },
+        {
+            "item_img": "lover.jpg",
+            "item_name": "Lover",
+            "item_price": 41.3,
+            "release_year": 2019,
             "type": "Vinyl",
             "genre" : "Pop"
         },
@@ -49,26 +73,10 @@
             "genre" : "Alternative"
         },
         {
-            "item_img": "Reputation.jpg",
-            "item_name": "Reputation",
-            "item_price": 130,
-            "release_year": 2017,
-            "type": "Vinyl",
-            "genre" : "Pop"
-        },
-        {
             "item_img": "Midnights.jpg",
             "item_name": "Midnights",
             "item_price": 27,
             "release_year": 2022,
-            "type": "Vinyl",
-            "genre" : "Pop"
-        },
-        {
-            "item_img": "lover.jpg",
-            "item_name": "Lover",
-            "item_price": 41.3,
-            "release_year": 2019,
             "type": "Vinyl",
             "genre" : "Pop"
         }

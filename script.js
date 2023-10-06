@@ -62,6 +62,46 @@ async function loadItems(){
         pricebox.appendChild(carting);
         pricebox.appendChild(price);
 
+    });    
+}
+async function loadToMenuBoxes()
+{
+    //loading release date options the its menu
+    const menuRelease = document.getElementById("menuRelease");
+    const menuGenre = document.getElementById("menuGenre");
+    const menuType = document.getElementById("menuType");
+    const items = await loadData();
+    const dateList = [];
+    const typeList = [];
+    const genreList = [];
+    items.vinyls.forEach(element => {
+        if (!dateList.includes(element.release_year))
+        {dateList.push(element.release_year);}
+
+        if (!typeList.includes(element.type))
+        {typeList.push(element.type);}
+
+        if (!genreList.includes(element.genre))
+        {genreList.push(element.genre);}
+    });
+    dateList.forEach(element => {
+        const date = document.createElement("div");
+        date.className = "menu-options";
+        date.textContent = element;
+        menuRelease.appendChild(date);
+    });
+    typeList.forEach(element => {
+        const date = document.createElement("div");
+        date.className = "menu-options";
+        date.textContent = element;
+        menuType.appendChild(date);
+    });
+    genreList.forEach(element => {
+        const date = document.createElement("div");
+        date.className = "menu-options";
+        date.textContent = element;
+        menuGenre.appendChild(date);
     });
 }
 loadItems();
+loadToMenuBoxes();
