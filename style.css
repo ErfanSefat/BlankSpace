@@ -95,6 +95,7 @@ body{
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
 }
+
 .menu-options:hover{
     opacity: 100%;
     scale:1.05;
@@ -110,6 +111,14 @@ body{
     opacity: 100%;
     height: fit-content;
     padding-top: 8px;
+}
+#remove-filters{
+    visibility: hidden;
+    color: rgba(255, 0, 0, 0.5);
+}
+#remove-filters:hover{
+    background-color: red;
+    color: white;
 }
 #item-container{
     display: flex;
