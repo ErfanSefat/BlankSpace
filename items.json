@@ -17,6 +17,14 @@
             "genre" : "Country"
         },
         {
+            "item_img": "speak-Cassette.jpg",
+            "item_name": "Speak Now (Taylor's Version)",
+            "item_price": 40,
+            "release_year": 2010,
+            "type": "Cassette",
+            "genre" : "Country"
+        },
+        {
             "item_img": "red.jpg",
             "item_name": "Red (Taylor's Version)",
             "item_price": 28,
