@@ -22,8 +22,10 @@ body{
     font-family: neue-roman;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+    min-height: 100dvh;
 }
 .top-bar{
     width: 100dvw;
@@ -59,7 +61,8 @@ body{
     height: 2px;
     width: 92dvw;
     background-color: rgba(0, 0, 0, 0.3);
-    margin: 86px 0px 26px;
+    position: absolute;
+    top: 186px;
 }
 .sorts{
     display: flex;
@@ -124,7 +127,7 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap:wrap;
-    margin: 0px 60px;
+    margin: 130px 60px 0px;
 }
 .item-card{
     display: inline-flex;
@@ -202,6 +205,25 @@ body{
 .item-card:hover .add-to-cart{
     opacity: 100%;
 }
+.bottom{
+    width: 100svw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90.22deg, #25233B 14.58%, #353247 50%, #283E55 86.46%);
+}
+.bottom div, a{
+    color: #DBDAD6;
+    display: flex;
+}
+.bottom a{
+    font-family: neue-thin;
+}
+.bottom img{
+    height: 18px;
+    margin-right: 6px;
+}
 @media only screen and (max-width: 1000px){
     .top-bar{
         height: 70px;
@@ -219,7 +241,7 @@ body{
         top: 70px;
     }
     .line{
-        margin-top: 74px;
+        top: 160px;
     }
     .item-card{
         scale: 0.8;
