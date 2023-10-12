@@ -264,4 +264,14 @@ body{
     .add-to-cart{
         opacity: 100%;
     }
+    .bottom{
+        margin-top: 18px;
+        flex-direction: column;
+    }
+    .bottom div{
+        margin-top: 10px;
+    }
+    .bottom a{
+        margin-bottom: 10px;
+    }
 }
