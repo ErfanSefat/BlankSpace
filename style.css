@@ -241,7 +241,7 @@ body{
     .user{right: 40px;}
     .filters{
         font-size: 16px;
-        top: 70px;
+        top: 60px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -252,6 +252,7 @@ body{
         margin-left: 8px;
         height: 20px;
     }
+    .pop-menu,.sorts{margin-top: 10px;}
     .genre img{margin-left: 16px;}
     #item-container{margin-top: 110px;}
     #remove-filters{
@@ -259,7 +260,7 @@ body{
         background-color: rgb(77, 0, 0);
         color: rgb(255, 255, 255);
         text-align: center;
-        width: 78dvw;
+        width: 70dvw;
         margin: 10px 0px 0px;
     }
     .item-card{
