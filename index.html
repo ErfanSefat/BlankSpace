@@ -12,7 +12,7 @@
         <div class="user bar-button">
             <img src="./Pictures/user.svg">               
         </div>
-        <div class="cart bar-button">
+        <div class="cart bar-button" onclick="ShowCart()">
             <img src="./Pictures/bag.svg">                    
         </div>
     </div>
@@ -34,6 +34,25 @@
     <div class="bottom">
         <div>Designed and Developed with Love for Miss Americana</div>
         <a href="https://erfansefat.github.io/"><img src="./Pictures/global-search.svg">ErfanSefat.github.io</a>
+    </div>
+    <div class="ShoppingCart" id="cart">
+        <!-- <div class="item-in-cart">
+            <img src="./Pictures/vinyls/lover.jpg">
+            <div class="in-cart-txts">
+                <div>Speak Now (Taylor's Version)</div>
+                <div class="cart-spans">
+                    <span>$40</span>
+                    <span class="remove-from-cart">remove</span>
+                </div>
+            </div>
+        </div> -->
+        <div class="total-price-box">
+            <div class="total-price">
+                Total Price:
+                <span id="totalPrice">$0</span>
+            </div>
+            <div class="checkout-btn">Check Out</div>
+        </div>
     </div>
 </body>
 <script src="./script.js"></script>

@@ -1,6 +1,8 @@
 const URL = "https://erfansefat.github.io/BlankSpace/items.json";
 const container = document.getElementById("item-container");
 const removeBtn = document.getElementById("remove-filters");
+const cart = document.getElementById("cart");
+let fullPrice = 0;
 async function loadData(){
     const items = await fetch(URL);
     const data = items.json();
@@ -59,6 +61,9 @@ function loadItem(element){
     const carting = document.createElement("div");
     carting.className = "add-to-cart";
     carting.textContent = "Add to Cart";
+    carting.addEventListener("click", function(){
+        addToCart(element);
+    });
 
     const price = document.createElement("div");
     price.className = "price";
@@ -158,4 +163,56 @@ function hideBtn(){
     removeCards();
     getItems();
     removeBtn.style.visibility = "hidden";
+}
+function ShowCart(){
+    if (cart.style.display === "none")
+    {cart.style.display = "block"}
+    else{cart.style.display = "none"}
+}
+function addToCart(element){
+    console.log(element);
+
+    const item_in_cart = document.createElement("div");
+    item_in_cart.className = "item-in-cart";
+    cart.appendChild(item_in_cart);
+
+    const in_cart_img = document.createElement("img");
+    in_cart_img.src = `./Pictures/vinyls/${element.item_img}`;
+    item_in_cart.appendChild(in_cart_img);
+
+    const in_cart_txts = document.createElement("div");
+    in_cart_txts.className = "in-cart-txts";
+
+    const cart_spans = document.createElement("div");
+    cart_spans.className = "cart-spans";
+
+    const in_cart_itemName = document.createElement("div");
+    in_cart_itemName.innerHTML = element.item_name;
+
+    const in_cart_itemPrice = document.createElement("span");
+    in_cart_itemPrice.innerHTML = `$${element.item_price}`;
+
+    const in_cart_itemRemove = document.createElement("span");
+    in_cart_itemRemove.innerHTML = "remove";
+    in_cart_itemRemove.className = "remove-from-cart";
+    in_cart_itemRemove.addEventListener('click', function(){
+        cart.removeChild(this.parentElement.parentElement.parentElement);
+        fullPrice -= element.item_price;
+        updateTotalPrice();
+        //console.log(fullPrice);
+    });
+
+    cart_spans.appendChild(in_cart_itemPrice);
+    cart_spans.appendChild(in_cart_itemRemove);
+
+    in_cart_txts.appendChild(in_cart_itemName);
+    in_cart_txts.appendChild(cart_spans);
+    item_in_cart.appendChild(in_cart_txts);
+
+    fullPrice += element.item_price;
+    updateTotalPrice();
+}
+function updateTotalPrice(){
+    const number = document.getElementById("totalPrice");
+    number.innerHTML = `$${fullPrice}`;
 }
